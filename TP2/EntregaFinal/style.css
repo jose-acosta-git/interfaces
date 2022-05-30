@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*border: none;
+    outline: none;*/
+}
+
+.login-usuario *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.inputs-usuario *{
+    margin: 2px 0px;
+}
+
+.inputs-botones *{
+    margin: 5px 0px;
+}
+
+.input-usuario {
+    border: 10px 10px black;
+    outline: auto;
+}
