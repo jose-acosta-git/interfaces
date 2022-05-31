@@ -44,3 +44,17 @@ body {
 .listaCategorias {
     margin-left: 20px;
 }
+
+/*ESTILOS DEL USERPAGE*/
+
+.cardUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionJuegosFavoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
