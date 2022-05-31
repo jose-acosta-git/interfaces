@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /*border: none;
+    outline: none;*/
+}
+
+body {
+    margin-top: 20px;
+}
+
+/*ESTILOS DE LOGIN Y REGISTER*/
+
+.loginUsuario *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.inputsUsuario *{
+    margin: 2px 0px;
+}
+
+.inputsBotones *{
+    margin: 5px 0px;
+}
+
+.inputUsuario {
+    border: 10px 10px black;
+    outline: auto;
+}
+
+/*ESTILOS DE SECCION CATEGORIAS*/
+
+.seccionCategorias {
+    margin-left: 20px;
+}
+
+.listaCategorias {
+    margin-left: 20px;
+}
+
+/*ESTILOS DEL USERPAGE*/
+
+.cardUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionJuegosFavoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
