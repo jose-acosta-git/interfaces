@@ -8,7 +8,13 @@
     outline: none;*/
 }
 
-.login-usuario *{
+body {
+    margin-top: 20px;
+}
+
+/*ESTILOS DE LOGIN Y REGISTER*/
+
+.loginUsuario *{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,15 +22,25 @@
     margin: 20px 0px;
 }
 
-.inputs-usuario *{
+.inputsUsuario *{
     margin: 2px 0px;
 }
 
-.inputs-botones *{
+.inputsBotones *{
     margin: 5px 0px;
 }
 
-.input-usuario {
+.inputUsuario {
     border: 10px 10px black;
     outline: auto;
+}
+
+/*ESTILOS DE SECCION CATEGORIAS*/
+
+.seccionCategorias {
+    margin-left: 20px;
+}
+
+.listaCategorias {
+    margin-left: 20px;
 }
