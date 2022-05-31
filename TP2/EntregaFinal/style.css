@@ -37,24 +37,29 @@ body {
 
 /*ESTILOS DE SECCION CATEGORIAS*/
 
-.seccionCategorias {
+.seccionCategorias, .listaCategorias{
     margin-left: 20px;
 }
 
-.listaCategorias {
-    margin-left: 20px;
-}
 
 /*ESTILOS DEL USERPAGE*/
 
-.cardUsuario {
+.cardUsuario, .seccionJuegosFavoritos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .seccionJuegosFavoritos {
+    flex-direction: column;
+}
+
+/*ESTILOS DE APARTADO FILTRO*/
+
+.seccionFiltros {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
