@@ -314,3 +314,12 @@ button {
     width: 47%;
     object-fit: cover;
 }
+
+
+/*PLAY*/
+
+main > img {
+    min-height: 90vh;
+    object-fit: cover;
+    margin: 17px 0;
+}
