@@ -71,6 +71,11 @@ nav ul li {
     align-items: center;
 }
 
+nav a {
+    display: flex;
+    align-items: center;
+}
+
 footer {
     background-color: #7D218A;
     display: flex;
@@ -211,6 +216,7 @@ button {
 
 .seccionCategorias {
     flex-direction: column;
+    min-height: 90vh;
 }
 
 .seccionCategorias h1{
@@ -218,9 +224,20 @@ button {
     margin-left: 20px;
 }
 
-.seccionCategorias .listaCategorias{
-    margin-top: 20px;
+.seccionCategorias ul{
+    margin-top: 25px;
     margin-left: 40px;
+}
+
+.seccionCategorias li::before {
+    content: "\2022";
+    color: white;
+    display: inline-block;
+    width: 1em;
+}
+
+.seccionCategorias li {
+    margin: 10px 0;
 }
 
 /*ESTILOS DEL USERPAGE*/
