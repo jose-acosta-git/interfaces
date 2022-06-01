@@ -17,7 +17,7 @@ section {
     flex-direction: column;
 }
 
-h1, h2, h3, h4, p, li, button {
+h1, h2, h3, h4, p, li, button, label {
     color: white;
     font-family: 'Oxanium';
     font-weight: 500;
@@ -31,7 +31,7 @@ h1 {
     font-size: 48px;
 }
 
-h3, li{
+h3, li, label{
     font-size: 30px;
 }
 
@@ -205,6 +205,20 @@ button {
     text-decoration: underline;
     background-color: #4D0258;
     color: white;
+}
+
+/*ESTILOS DE SECCION CATEGORIAS*/
+
+.seccionFiltros {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.seccionFiltros * {
+    align-items: center;
+    margin: 3px;
 }
 
 /*ESTILOS DE SECCION CATEGORIAS*/
