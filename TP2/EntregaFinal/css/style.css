@@ -13,10 +13,18 @@ div, section, main, li {
     display: flex;
 }
 
-h1, h2, h3, h4, p, li {
+section {
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, p, li, button {
     color: white;
     font-family: 'Oxanium';
-    font-weight: lighter;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 38px;
 }
 
 h1 {
@@ -78,15 +86,21 @@ main {
     /*min-height: 90vh;*/
 }
 
+button {
+    background-color: #A960B3;
+    width: 100px;
+    height: 36px;
+    border-radius: 4px;
+}
+
 
 /*HOME*/
 
 .card-container {
     margin: 0 15px 6px 15px;
-    flex-direction: column;
 }
 
-.card-container section{
+.card-container section {
     flex-direction: column;
     align-items: center;
 }
@@ -223,6 +237,20 @@ main {
     align-items: center;
 }
 
+#userName {
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+#userName img:first-child {
+    height: 63px;
+}
+
+#userName h3 {
+    margin: 0 10px;
+}
 
 /*SEARCH*/
 
@@ -245,19 +273,59 @@ main {
 }
 
 
-/*USER*/
+/*GAME*/
 
-#userName {
+#gamePage {
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+#gamePage section {
+    margin-bottom: 37px;
+}
+
+#gamePage section:first-child {
     align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 24px;
 }
 
-#userName img:first-child {
-    height: 63px;
+#gamePage section:first-child div:first-child {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 
-#userName h3 {
-    margin: 0 10px;
+#gamePage section:first-child div img {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#gamePage section > img {
+    margin: 12px 0;
+    width: 100%;
+}
+
+#gamePage h4 {
+    margin-bottom: 10px;
+}
+
+#gamePage section:last-child div {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+#gamePage section:last-child div img {
+    width: 47%;
+    object-fit: cover;
+}
+
+
+/*PLAY*/
+
+main > img {
+    min-height: 90vh;
+    object-fit: cover;
+    margin: 17px 0;
 }
