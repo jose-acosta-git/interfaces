@@ -103,8 +103,18 @@ button {
     border-radius: 4px;
 }
 
-.menu {
+/*MENU*/
+
+#menu {
     flex-direction: column;
+    position: absolute;
+    display: none;
+    transition: display;
+}
+
+#menu:target {
+    display: flex;
+    width: 100%;
 }
 
 
