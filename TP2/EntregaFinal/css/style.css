@@ -146,28 +146,34 @@ main {
 
 /*ESTILOS DE LOGIN Y REGISTER*/
 
-.loginUsuario *{
+.loginUsuario, .inputsUsuario, .inputsBotones{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     margin: 20px 0px;
 }
 
-.inputsUsuario *{
-    margin: 2px 0px;
+.inputsUsuario {
+    align-items: flex-start;
 }
 
-.inputsBotones *{
-    margin: 5px 0px;
-}
-
-.inputUsuario {
+.inputsUsuario input {
+    width: 100%;
     width: 300px;
     height: 30px;
     outline: white solid 2px;
     border-radius: 5px;
     background-color: #4D0258;
+}
+
+.inputsUsuario h4{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.inputsBotones *{
+    margin: 5px 0px;
 }
 
 .botonIngresar {
