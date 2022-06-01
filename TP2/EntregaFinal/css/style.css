@@ -71,6 +71,7 @@ nav ul li {
     align-items: center;
 }
 
+
 nav a {
     display: flex;
     align-items: center;
@@ -88,7 +89,7 @@ main {
     flex-direction: column;
     padding-top: 14px;
     padding-bottom: 22px;
-    /*min-height: 90vh;*/
+    min-height: 90vh;
 }
 
 button {
@@ -197,6 +198,7 @@ button {
 
 .botonIngresar {
     background-color: #A960B3;
+    transition: padding 0.2s;
     border: none;
     border-radius: 5px;
     color: white;
@@ -204,6 +206,10 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+}
+
+.botonIngresar:hover {
+    padding: 17px 34px;
 }
 
 .botonCambiarAccion {
@@ -359,4 +365,12 @@ main > img {
     min-height: 90vh;
     object-fit: cover;
     margin: 17px 0;
+}
+
+
+/*HOVER*/
+
+.card, .adCard, nav ul li, .botonCambiarAccion, .botonIngresar, #botonFlecha:hover, #gamePage button,
+.seccionCategorias ul li, #editarUser{
+    cursor: pointer;
 }
