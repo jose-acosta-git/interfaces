@@ -9,6 +9,10 @@
     outline: none;
 }
 
+a {
+    color: inherit;
+}
+
 div, section, main, li {
     display: flex;
 }
@@ -47,7 +51,7 @@ body {
     flex-direction: column;
 }
 
-header {
+header, .headerCategorias {
     background-color: #7D218A;
     height: 60px;
     display: flex;
@@ -84,7 +88,7 @@ footer {
     padding: 20px 0;
 }
 
-main {
+main, .seccionCategorias {
     background-color: #4D0258;
     flex-direction: column;
     padding-top: 14px;
@@ -99,6 +103,24 @@ button {
     border-radius: 4px;
 }
 
+<<<<<<< HEAD
+=======
+/*MENU*/
+
+#menu {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    transition: display;
+}
+
+#menu:target {
+    display: flex;
+    width: 100%;
+}
+
+
+>>>>>>> efea2d1ab477880b95a38496742ff80224fb10ab
 /*HOME*/
 
 .card-container {
