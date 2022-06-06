@@ -212,6 +212,13 @@ button {
 
 .inputsBotones *{
     margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsBotones a {
+    width: 100%;
 }
 
 .botonIngresar {
@@ -220,14 +227,14 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 15px 32px;
+    padding: 12% 15%;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
 }
 
 .botonIngresar:hover {
-    padding: 17px 34px;
+    padding: 15% 18%;
 }
 
 .botonCambiarAccion {
@@ -391,4 +398,27 @@ main > img {
 .card, .adCard, nav ul li, .botonCambiarAccion, .botonIngresar, #botonFlecha:hover, #gamePage button,
 .seccionCategorias ul li, #editarUser{
     cursor: pointer;
+}
+
+/*LOADING*/
+
+.loading {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation-name: loading;
+    animation-iteration-count: 1;
+    animation-duration: 0.3s;
+}
+
+@keyframes loading {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.hidden {
+    overflow: hidden;
 }
