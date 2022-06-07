@@ -136,12 +136,15 @@ button {
     justify-content: space-between;
 }
 
+.card-container section > div a {
+    width: 47%;
+}
+
 .card {
     flex-direction: column;
     text-align: center;
     border: solid white 4px;
-    width: 163px;
-    height: 163px;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -161,7 +164,7 @@ button {
 
 .adCard {
     border: solid white 4px;
-    width: 163px;
+    width: 47%;
     height: 163px;
     box-sizing: border-box;
 }
@@ -421,4 +424,13 @@ main > img {
 
 .hidden {
     overflow: hidden;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    /*HOME*/
+
+    
+
 }
