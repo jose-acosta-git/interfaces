@@ -125,26 +125,20 @@ button {
 }
 
 .card-container section {
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-container section > div {
-    flex-direction: row;
     width: 100%;
-    margin-bottom: 18px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 10px;
 }
 
-.card-container section > div a {
-    width: 47%;
+.card-container section a {
+    width: 100%;
 }
 
 .card {
     flex-direction: column;
     text-align: center;
     border: solid white 4px;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -164,7 +158,6 @@ button {
 
 .adCard {
     border: solid white 4px;
-    width: 47%;
     height: 163px;
     box-sizing: border-box;
 }
