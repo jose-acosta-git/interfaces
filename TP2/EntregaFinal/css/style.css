@@ -103,6 +103,11 @@ button {
     border-radius: 4px;
 }
 
+button:hover {
+    width: 102px;
+    height: 38px;
+}
+
 /*MENU*/
 
 #menu {
