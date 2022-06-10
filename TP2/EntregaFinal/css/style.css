@@ -419,24 +419,22 @@ main > img {
     overflow: hidden;
 }
 
+@media only screen and (min-width: 480px) {
+    .card-container section {
+        grid-template-columns: 32% 32% 32%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card-container section {
+        grid-template-columns: 24% 24% 24% 24%;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
 
-    /*HOME*/
-
-    /*.card-container section {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card-container section > div {
-        justify-content: space-around;
-        max-width: 550px;
-        flex-wrap: wrap;
-    }
-
-    .tituloCategoria {
-        justify-content: start;
+    .card-container section {
+        grid-template-columns: 19% 19% 19% 19% 19%;
     }
 
     .card-container h3 {
@@ -444,9 +442,20 @@ main > img {
         margin-right: 15px;
     }
 
-    .card-container section > div a {
-        min-width: 50px;
-    }*/
+    .tituloCategoria {
+        justify-content: start;
+    }
 
+}
 
+@media only screen and (min-width: 1264px) {
+    .card-container section {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .card-container section {
+        grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    }
 }
