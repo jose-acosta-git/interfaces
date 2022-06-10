@@ -375,17 +375,67 @@ button {
     margin-bottom: 10px;
 }
 
-#gamePage section:last-child div {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 13px;
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
-#gamePage section:last-child div img {
-    width: 47%;
-    object-fit: cover;
+.carrousel ul, .carrousel li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
 }
 
+ul.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+ul.slider img {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    left: 7%;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    max-width: 300px;
+}
+
+ul.slider img:first-child {
+    opacity: 1;
+}
+
+ul.slider img:target {
+    opacity: 1;
+}
+
+.carrousel nav{
+    position: relative;
+    margin-top: 200px;
+}
+
+.carrousel .menu li{
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 5px;
+    border: black 1px solid;
+    transition: background-color 2s;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
 
 /*PLAY*/
 
