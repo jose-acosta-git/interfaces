@@ -103,6 +103,11 @@ button {
     border-radius: 4px;
 }
 
+button:hover {
+    width: 102px;
+    height: 38px;
+}
+
 /*MENU*/
 
 header ul li {
@@ -165,9 +170,14 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
 }
 
 .adCard {
-    border: solid white 4px;
+    border: solid black 10px;
     height: 163px;
     box-sizing: border-box;
+}
+
+.adCard:hover {
+    border: solid black 12px;
+    opacity: 0.5;
 }
 
 .adCard img {
@@ -245,6 +255,75 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
     text-decoration: underline;
     background-color: #4D0258;
     color: white;
+}
+
+/*ANIMACION LOGIN*/
+
+.cubo, .cara {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+}
+
+.cara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.cara img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.cubo {
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+    transform-style: preserve-3d;
+    animation-name: rotacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#superior {
+    background-color:#A960B3;
+    transform: rotateX(90deg) translateZ(100px);
+    border: white solid 4px;
+}
+
+#frente {
+    background-color: #7D218A;
+    transform: translateZ(100px);
+    border: white solid 4px;
+}
+
+#trasera {
+    background-color: #7D218A;
+    transform: translateZ(-100px);
+    border: white solid 4px;
+}
+
+#derecha {
+    background-color: #7D218A;
+    transform: rotateY(90deg) translateZ(100px);
+    border: white solid 4px;
+}
+
+#izquierda {
+    background-color: #7D218A;
+    transform: rotateY(-90deg) translateZ(100px);
+    border: white solid 4px;
+}
+
+#inferior {
+    background-color: #A960B3;
+    transform: rotateX(-90deg) translateZ(100px);
+    border: white solid 4px;
+}
+
+@keyframes rotacion {
+    0% {transform: rotateY(0deg) rotateX(0deg);}
+    100% {transform: rotateY(360deg) rotateX(360deg);}
 }
 
 /*ESTILOS DE SECCION CATEGORIAS*/
@@ -376,17 +455,67 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
     margin-bottom: 10px;
 }
 
-#gamePage section:last-child div {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 13px;
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
-#gamePage section:last-child div img {
-    width: 47%;
-    object-fit: cover;
+.carrousel ul, .carrousel li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
 }
 
+ul.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+ul.slider img {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    left: 7%;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    max-width: 300px;
+}
+
+ul.slider img:first-child {
+    opacity: 1;
+}
+
+ul.slider img:target {
+    opacity: 1;
+}
+
+.carrousel nav{
+    position: relative;
+    margin-top: 200px;
+}
+
+.carrousel .menu li{
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 5px;
+    border: black 1px solid;
+    transition: background-color 2s;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
 
 /*PLAY*/
 
