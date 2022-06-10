@@ -162,9 +162,14 @@ button:hover {
 }
 
 .adCard {
-    border: solid white 4px;
+    border: solid black 10px;
     height: 163px;
     box-sizing: border-box;
+}
+
+.adCard:hover {
+    border: solid black 12px;
+    opacity: 0.5;
 }
 
 .adCard img {
