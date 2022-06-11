@@ -110,6 +110,14 @@ button:hover {
 
 /*MENU*/
 
+header ul li {
+    display: none;
+}
+
+header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
+    display: flex;
+}
+
 #menu {
     flex-direction: column;
     position: absolute;
@@ -561,6 +569,36 @@ main > img {
 }
 
 @media only screen and (min-width: 1024px) {
+
+    /*MENU*/
+
+    header ul {
+        justify-content: space-between;
+    }
+
+    header ul li {
+        display: flex;
+    }
+
+    header ul li:first-child {
+        display: none;
+    }
+
+    header ul img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    header ul li:nth-child(2) img, header ul li:last-child img {
+        width: auto;
+        margin-right: 0;
+    }
+
+    /*CARDS*/
 
     .card-container section {
         grid-template-columns: 19% 19% 19% 19% 19%;
