@@ -23,8 +23,15 @@
                 </ul>
             </nav>
         </div>
+
         
         <section class="seccionCategorias">
+            
+            <form class="search" action="searching.html" method="POST">
+                <input type="text" name="search" placeholder="Buscar juego" class="input-search">
+                <img src="images/icons/search.png" alt="search">
+            </form>
+
             <h1>Categorías</h1>
 
             <img src="images/components/separador.png" alt="separador">
@@ -54,6 +61,12 @@
                 <li><a href="search.html"> <img src="images/icons/ball.png" alt="sports"> Deportes</a></li>
                 <li><a href="search.html"> <img src="images/icons/teddy-bear.png" alt="infantile"> Infantiles</a></li>
                 <li><a href="search.html"> <img src="images/icons/chess.png" alt="table-games"> Mesa</a></li>
+                <li>
+                    <form class="search">
+                        <input type="text" name="search" placeholder="Buscar juego" class="input-search">
+                        <img src="images/icons/search.png" alt="search">
+                    </form>
+                </li>
                 <li><a href="login.html"><img src="images/components/user.png" alt="user"></a></li>
             </ul>
         </nav>
@@ -303,6 +316,7 @@
         <p>Copyright AE®</p>
     </footer>
 
+    <script src="js/search.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
 </body>

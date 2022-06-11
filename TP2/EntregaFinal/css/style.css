@@ -170,13 +170,14 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
 }
 
 .adCard {
-    border: solid black 10px;
+    border: solid #EEF9A8 10px;
     height: 163px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .adCard:hover {
-    border: solid black 12px;
+    border: solid #4F5A02 12px;
     opacity: 0.5;
 }
 
@@ -365,6 +366,18 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
 
 .seccionCategorias li {
     margin: 10px 0;
+}
+
+.search {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    align-self: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 /*ESTILOS DEL USERPAGE*/
@@ -579,7 +592,7 @@ main > img {
         display: flex;
     }
 
-    header ul li:first-child {
+    header ul li:first-child, header ul li:nth-child(3), header ul li:nth-child(4) {
         display: none;
     }
 
@@ -595,6 +608,10 @@ main > img {
     header ul li:nth-child(2) img, header ul li:last-child img {
         width: auto;
         margin-right: 0;
+    }
+
+    .search {
+        margin: 0;
     }
 
     /*CARDS*/
@@ -615,13 +632,25 @@ main > img {
 }
 
 @media only screen and (min-width: 1264px) {
+
+    header ul li:nth-child(4) {
+        display: flex;
+    }
+
     .card-container section {
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
     }
+
 }
 
 @media only screen and (min-width: 1600px) {
+
+    header ul li:nth-child(3) {
+        display: flex;
+    }
+
     .card-container section {
         grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     }
+
 }

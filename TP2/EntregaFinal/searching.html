@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Userpage</title>
+    <title>Búsqueda</title>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="hidden">
 
     <div class="loading" id="onload">
         <img src="images/pacman-loading.gif" alt="loading">
     </div>
-
     
     <div id="menu">
 
@@ -71,91 +69,18 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
 
-        <div id="userName">
-            <img src="images/components/user.png" alt="usuario">
-            <h3>elbicho2983</h3>
-            <img id="editarUser" src="images/components/pen.png" alt="pen">
-        </div>
-
         <section class="card-container">
-            <h3>Mis juegos favoritos</h3>
-            <section>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/sonic.jpg" alt="sonic">
-                        <h4>Sonic</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/damas.jpg" alt="damas">
-                        <h4>Damas</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/domino.jpg" alt="domino">
-                        <h4>Dominó</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/super mario.jpg" alt="super mario">
-                        <h4>Super Mario</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/monopoly.jpg" alt="monopoly">
-                        <h4>Monopoly</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/pacman.jpg" alt="pacman">
-                        <h4>Pacman</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/undertale.jpg" alt="undertale">
-                        <h4>Undertale</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/finalfantasy.png" alt="finalfantasy">
-                        <h4>Final Fantasy III</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/Bomberman.jpg" alt="Bomberman">
-                        <h4>Bomberman</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/kirby.jpg" alt="kirby">
-                        <h4>Kirby</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/pes6.jpg" alt="pes6">
-                        <h4>Pro Evolution Soccer 2006</h4>
-                    </div>
-                </a>
-                <a href="game.html">
-                    <div class="card">
-                        <img src="images/zelda.jpg" alt="zelda">
-                        <h4>The Leyend of Zelda</h4>
-                    </div>
-                </a>
-            </section>
+            <div class="searchTitle">
+                <h3 id="titulo-busqueda">" "</h3>
+                <div>
+                    <p>ordenar por</p>
+                    <img id="botonFlecha" src="images/components/flecha.png" alt="flecha">
+                </div>
+            </div>
+            <section id="games-section"></section>
         </section>
 
     </main>
@@ -163,11 +88,10 @@
     <footer>
         <p>Copyright AE®</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
+    <script src="js/searching.js"></script>
     <script src="js/search.js"></script>
-    
 </body>
-
 </html>
