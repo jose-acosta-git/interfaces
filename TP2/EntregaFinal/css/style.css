@@ -368,6 +368,18 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
     margin: 10px 0;
 }
 
+.seccionCategorias form {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    align-self: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
 /*ESTILOS DEL USERPAGE*/
 
 .cardUsuario {

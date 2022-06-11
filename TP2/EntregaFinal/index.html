@@ -19,8 +19,15 @@
                 </ul>
             </nav>
         </div>
+
         
         <section class="seccionCategorias">
+            
+            <form id="search" action="searching.html" method="POST">
+                <input type="text" name="search" placeholder="Buscar juego" id="input-search">
+                <img src="images/icons/search.png" alt="search">
+            </form>
+
             <h1>Categorías</h1>
 
             <img src="images/components/separador.png" alt="separador">
@@ -190,9 +197,11 @@
 
     </main>
 
-
     <footer>
         <p>Copyright AE®</p>
     </footer>
+
+    <script src="js/search.js"></script>
+
 </body>
 </html>
