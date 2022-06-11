@@ -134,7 +134,7 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
 /*HOME*/
 
 .card-container {
-    margin: 0 15px 6px 15px;
+    margin: 0 15px 20px 15px;
 }
 
 .card-container section {
