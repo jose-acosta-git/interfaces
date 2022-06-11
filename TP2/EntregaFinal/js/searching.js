@@ -3,11 +3,11 @@
 const games = [
     {
         "name": "Super Mario Bros",
-        "image": "../images/super mario.jpg"
+        "image": "images/super mario.jpg"
     },
     {
         "name": "Sonic",
-        "image": "../images/sonic.jpg"
+        "image": "images/sonic.jpg"
     }
 ];
 
