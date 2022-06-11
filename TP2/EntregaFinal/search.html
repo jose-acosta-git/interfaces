@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="hidden">
 
     <div class="loading" id="onload">
         <img src="images/pacman-loading.gif" alt="loading">
     </div>
-    
+
     <div id="menu">
 
         <div class="headerCategorias">
@@ -23,7 +25,7 @@
                 </ul>
             </nav>
         </div>
-        
+
         <section class="seccionCategorias">
             
             <form class="search" action="searching.html" method="POST">
@@ -39,7 +41,7 @@
                 <li><a href="search.html">Acción</a></li>
                 <li><a href="search.html">Aventura</a></li>
                 <li><a href="search.html">Carreras</a></li>
-                <li><a href="search.html">Cocina</a</li>
+                <li><a href="search.html">Cocina</a></li>
                 <li><a href="search.html">Infantiles</a></li>
                 <li><a href="search.html">Mesa</a></li>
             </ul>
@@ -55,7 +57,7 @@
                 <li><a href="search.html"> <img src="images/icons/swords.png" alt="action"> Acción</a></li>
                 <li><a href="search.html"> <img src="images/icons/compass.png" alt="adventure"> Aventura</a></li>
                 <li><a href="search.html"> <img src="images/icons/flag.png" alt="races"> Carreras</a></li>
-                <li><a href="search.html"> <img src="images/icons/cooking.png" alt="cooking"> Cocina</a</li>
+                <li><a href="search.html"> <img src="images/icons/cooking.png" alt="cooking"> Cocina</a></li>
                 <li><a href="search.html"> <img src="images/icons/ball.png" alt="sports"> Deportes</a></li>
                 <li><a href="search.html"> <img src="images/icons/teddy-bear.png" alt="infantile"> Infantiles</a></li>
                 <li><a href="search.html"> <img src="images/icons/chess.png" alt="table-games"> Mesa</a></li>
@@ -80,26 +82,44 @@
                     <img id="botonFlecha" src="images/components/flecha.png" alt="flecha">
                 </div>
             </div>
+
+            <form id="seccionFiltros">
+                <ul>
+                    <li>
+                        <label>El más popular</label>
+                        <input type="radio" id="opcionPopular"></input>
+                    </li>
+                    <li>
+                        <label>El más nuevo</label>
+                        <input type="radio" id="opcionNuevo"></input>
+                    </li>
+                    <li>
+                        <label>El más gustado</label>
+                        <input type="radio" id="opcionGustado"></input>
+                    </li>
+                </ul>
+            </form>
+
             <section>
-                <a href="game.html">
+                <a id="card1" href="game.html">
                     <div class="card">
-                        <img src="images/poker.jpg" alt="poker">
+                        <img id="img1" src="images/poker.jpg" alt="poker">
                         <h4>Poker</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card2" href="game.html">
                     <div class="card">
                         <img src="images/damas.jpg" alt="damas">
                         <h4>Damas</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card3" href="game.html">
                     <div class="card">
                         <img src="images/domino.jpg" alt="domino">
                         <h4>Dominó</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card4" href="game.html">
                     <div class="card">
                         <img src="images/solitario.jpg" alt="solitario">
                         <h4>Solitario</h4>
@@ -110,43 +130,43 @@
                         <img src="images/mcdonalds.jpg" alt="mcdonals">
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card5" href="game.html">
                     <div class="card">
                         <img src="images/truco.jpg" alt="truco">
                         <h4>Truco</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card6" href="game.html">
                     <div class="card">
                         <img src="images/ajedrez.png" alt="ajedrez">
                         <h4>Ajedrez</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card7" href="game.html">
                     <div class="card">
                         <img src="images/monopoly.jpg" alt="monopoly">
                         <h4>Monopoly</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card8" href="game.html">
                     <div class="card">
                         <img src="images/mahjong.png" alt="mahjong">
                         <h4>Mahjong</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card9" href="game.html">
                     <div class="card">
                         <img src="images/uno.jpg" alt="uno">
                         <h4>Uno</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card10" href="game.html">
                     <div class="card">
                         <img src="images/parchis.png" alt="parchis">
                         <h4>Parchis</h4>
                     </div>
                 </a>
-                <a href="game.html">
+                <a id="card11" href="game.html">
                     <div class="card">
                         <img src="images/Bingo.jpg" alt="bingo">
                         <h4>Bingo</h4>
@@ -165,4 +185,5 @@
     <script src="main.js"></script>
     <script src="js/search.js"></script>
 </body>
+
 </html>
