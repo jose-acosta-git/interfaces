@@ -368,7 +368,7 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
     margin: 10px 0;
 }
 
-.seccionCategorias form {
+.search {
     display: flex;
     background-color: white;
     width: 90%;
@@ -592,7 +592,7 @@ main > img {
         display: flex;
     }
 
-    header ul li:first-child {
+    header ul li:first-child, header ul li:nth-child(3), header ul li:nth-child(4) {
         display: none;
     }
 
@@ -608,6 +608,10 @@ main > img {
     header ul li:nth-child(2) img, header ul li:last-child img {
         width: auto;
         margin-right: 0;
+    }
+
+    .search {
+        margin: 0;
     }
 
     /*CARDS*/
@@ -628,13 +632,25 @@ main > img {
 }
 
 @media only screen and (min-width: 1264px) {
+
+    header ul li:nth-child(4) {
+        display: flex;
+    }
+
     .card-container section {
         grid-template-columns: 15% 15% 15% 15% 15% 15%;
     }
+
 }
 
 @media only screen and (min-width: 1600px) {
+
+    header ul li:nth-child(3) {
+        display: flex;
+    }
+
     .card-container section {
         grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     }
+
 }
