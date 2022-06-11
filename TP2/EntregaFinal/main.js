@@ -6,3 +6,13 @@ window.onload = function() { //cuando la ventana haya cargado por completo se ej
         $("body").removeClass("hidden");
     }  
 }
+
+var botonFlecha = document.getElementById('botonFlecha');
+var filtros = document.getElementById("seccionFiltros");
+
+botonFlecha.addEventListener("click", desplegarMenu);
+
+function desplegarMenu() {
+    $(filtros).toggle();
+}
+
