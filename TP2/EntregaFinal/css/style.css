@@ -170,13 +170,14 @@ header ul li:first-child, header ul li:nth-child(2), header ul li:last-child {
 }
 
 .adCard {
-    border: solid black 10px;
+    border: solid #EEF9A8 10px;
     height: 163px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .adCard:hover {
-    border: solid black 12px;
+    border: solid #4F5A02 12px;
     opacity: 0.5;
 }
 
